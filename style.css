@@ -2,6 +2,13 @@ body {
     background: #202124;
     color: white;
 }
+li {
+    list-style: none;
+}
+li a {
+    text-decoration: none;
+    color: white;
+}
 nav {
-
+    display: flex;
 }
