@@ -45,28 +45,46 @@ main {
 .search-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
 }
-form {
+.search-container form {
+    position: relative;
+}
+.search-container form #magnify {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    font-size: 1.5em;
+}
+.search-container form #camera {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    font-size: 1.5em;
+}
+.search-container form #microphone {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    font-size: 1.5em;
+}
+.hero-container {
     display: flex;
     justify-content: center;
-    width: 100%;
-}
-.buttons {
-    display: flex;
-    justify-content: center;
-    padding: 2em;
-    gap: 10px;
-    /* border: 2px solid red; */
-}
-.search-bar {
-    
+    align-items: center;
+    height: 60vh;
 }
 
 /* stlying for main content */
 input {
     border-radius: 16px;
-    border: none;
+    border: 1px solid #bdc1c6;
+    background: #202124;
+    color: white;
+    height: 2.8em;
+    width: 40em;
 }
 button {
     border-radius: 4px;
@@ -75,8 +93,19 @@ button {
     color: white;
     border: none;
 }
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
 button:hover {
     outline: 1px solid #bdc1c6;
+}
+#search {
+    padding-left: 40px;
+}
+#search:hover {
+    background: #bdc1c652;
 }
 
 /* Footer here */
@@ -85,7 +114,7 @@ footer ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 26em;
+    margin-top: 13.9em;
 }
 .footer-left {
     display: flex;
